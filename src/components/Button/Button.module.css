@@ -1,0 +1,18 @@
+.button {
+  border: none;
+  background-color: #2e7aec;
+  color: #fff;
+  font-weight: 600;
+  padding: 18px 50px;
+  border-radius: 5px;
+  font-size: 17px;
+  flex-shrink: 0;
+}
+
+.button:not(:disabled) {
+  cursor: pointer;
+}
+
+.button:disabled {
+  background-color: #999;
+}

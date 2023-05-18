@@ -1,0 +1,11 @@
+[
+  { "id": "1", "name": "Big Mac", "quantity": 1, "price": 4.35 },
+  { "id": "2", "name": "Quarter Pounder", "quantity": 2, "price": 4.4 },
+  { "id": "3", "name": "Filet-O-Fish", "quantity": 1, "price": 4.05 },
+  {
+    "id": "4",
+    "name": "20 piece chicken McNuggets",
+    "quantity": 1,
+    "price": 7.75
+  }
+]

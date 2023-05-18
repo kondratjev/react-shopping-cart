@@ -1,0 +1,8 @@
+.cart__error,
+.cart__empty {
+  font-size: 20px;
+}
+
+.cart__error {
+  color: #ff5b62;
+}

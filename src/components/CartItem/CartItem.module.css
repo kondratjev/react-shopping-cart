@@ -1,0 +1,77 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 25px 0;
+}
+
+.item__title {
+  flex: 2;
+  font-size: 24px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.item__quantity {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.item__quantity-button {
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  font-weight: 500;
+}
+
+.item__quantity-button:hover {
+  background-color: #f9f9f9;
+}
+
+.item__quantity-input {
+  max-width: 60px;
+  text-align: center;
+  margin: 0 10px;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.item__price {
+  flex: 1;
+  font-size: 22px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.item__remove-button {
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.item__remove-button:before {
+  content: "";
+  display: block;
+  background-image: url("../../assets/remove.svg");
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.item__remove-button:hover {
+  background-color: #f9f9f9;
+}
