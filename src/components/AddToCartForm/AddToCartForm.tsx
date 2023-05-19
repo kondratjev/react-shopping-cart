@@ -1,20 +1,22 @@
 import Button from '@/components/Button';
 import InputField from '@/components/InputField';
 import { CartItemType } from '@/reducers/cart/cartSlice';
-import { zodResolver } from '@hookform/resolvers/zod';
+import { yupResolver } from '@hookform/resolvers/yup';
 import { nanoid } from 'nanoid';
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import * as z from 'zod';
 import classes from './AddToCartForm.module.css';
+import * as yup from 'yup';
 
-const validationSchema = z.object({
-  name: z.string().nonempty('Name is required'),
-  quantity: z
-    .number({ invalid_type_error: 'Quantity must be an integer' })
+const validationSchema = yup.object({
+  name: yup.string().required('Name is required'),
+  quantity: yup
+    .number()
+    .typeError('Quantity must be an integer')
     .min(1, 'Quantity must be greater than or equal to 1'),
-  price: z
-    .number({ invalid_type_error: 'Price must be an integer' })
+  price: yup
+    .number()
+    .typeError('Price must be an integer')
     .min(0.01, 'Price must be greater than or equal to 0.01'),
 });
 
@@ -34,8 +36,9 @@ const AddToCartForm: React.FC<Props> = React.memo((props) => {
     reset,
     formState: { errors },
   } = useForm<FormValues>({
-    resolver: zodResolver(validationSchema),
+    resolver: yupResolver(validationSchema),
     mode: 'onBlur',
+    defaultValues: validationSchema.getDefault(),
   });
 
   const onSubmit = handleSubmit(({ name, quantity, price }) => {
