@@ -5,8 +5,8 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { nanoid } from 'nanoid';
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import classes from './AddToCartForm.module.css';
 import * as yup from 'yup';
+import classes from './AddToCartForm.module.css';
 
 const validationSchema = yup.object({
   name: yup.string().required('Name is required'),

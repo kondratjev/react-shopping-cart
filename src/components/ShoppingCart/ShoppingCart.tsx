@@ -1,9 +1,9 @@
 import { CartItemType } from '@/reducers/cart/cartSlice';
 import React from 'react';
-import classes from './ShoppingCart.module.css';
-import Subtotal from '../Subtotal';
-import Loader from '../Loader';
 import CartItem from '../CartItem';
+import Loader from '../Loader';
+import Subtotal from '../Subtotal';
+import classes from './ShoppingCart.module.css';
 
 type Props = {
   items: CartItemType[];

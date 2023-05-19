@@ -1,5 +1,5 @@
-import React from 'react';
 import { formatCurrency } from '@/utils/format';
+import React from 'react';
 import classes from './Subtotal.module.css';
 
 type Props = { subtotal: number };

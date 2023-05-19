@@ -1,6 +1,7 @@
 import AddToCartForm from '@/components/AddToCartForm';
 import Layout from '@/components/Layout/Layout';
 import CartItems from '@/components/ShoppingCart';
+import { useAppDispatch, useAppSelector } from '@/hooks/redux';
 import { cartSelector, subtotalSelector } from '@/reducers/cart/cartSelectors';
 import {
   CartItemType,
@@ -11,7 +12,6 @@ import {
   removeFromCart,
   subtractQuantity,
 } from '@/reducers/cart/cartSlice';
-import { useAppDispatch, useAppSelector } from '@/hooks/redux';
 import React, { useCallback, useEffect } from 'react';
 
 const App: React.FC = () => {
