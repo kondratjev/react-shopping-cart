@@ -1,13 +1,18 @@
 .container {
-  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--gray-font-color);
+}
+
+.wrapper__error {
+  border-color: var(--error-color);
 }
 
 .title {
-  color: #999;
+  color: var(--gray-font-color);
   font-weight: 500;
   font-size: 14px;
   margin-bottom: 5px;
@@ -18,12 +23,13 @@
   background: none;
   border: none;
   padding: 10px 0;
-  color: #fff;
+  color: var(--main-font-color);
 }
 
 .error {
   margin-top: 15px;
-  font-size: 14px;
-  color: #ff5b62;
+  margin-bottom: 0;
+  font-size: 12px;
+  color: var(--error-color);
   font-weight: 500;
 }

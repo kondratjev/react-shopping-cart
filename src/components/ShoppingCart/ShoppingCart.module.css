@@ -4,5 +4,5 @@
 }
 
 .cart__error {
-  color: #ff5b62;
+  color: var(--error-color);
 }

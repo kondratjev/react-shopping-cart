@@ -1,3 +1,12 @@
+:root {
+  --error-color: #ff5b62;
+  --light-border-color: #f1f1f1;
+  --light-hover-background: #f9f9f9;
+  --main-font-color: #fff;
+  --gray-font-color: #999;
+  --button-color: #2e7aec;
+}
+
 body {
   font-family: Montserrat, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

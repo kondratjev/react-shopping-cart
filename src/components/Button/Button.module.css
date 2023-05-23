@@ -1,7 +1,7 @@
 .button {
   border: none;
-  background-color: #2e7aec;
-  color: #fff;
+  background-color: var(--button-color);
+  color: var(--main-font-color);
   font-weight: 600;
   padding: 18px 50px;
   border-radius: 5px;
@@ -14,5 +14,5 @@
 }
 
 .button:disabled {
-  background-color: #999;
+  background-color: var(--gray-font-color);
 }
